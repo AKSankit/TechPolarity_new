@@ -28,7 +28,7 @@ const TabBar = () => {
                 {/* Left Navigation Button */}
                 <button
                     aria-label="Scroll left"
-                    className="absolute left-1 top-1/2 transform -translate-y-1/2 bg-gray-400 text-black text-3xl p-2 rounded-full hover:bg-gray-500 transition duration-300"
+                    className="absolute left-1 top-1/2 transform -translate-y-1/2 bg-gray-300 text-black text-3xl p-2 rounded-full hover:bg-gray-400 transition duration-300"
                     onClick={scrollLeft}
                 >
                     &lt;
@@ -53,7 +53,7 @@ const TabBar = () => {
                 {/* Right Navigation Button */}
                 <button
                     aria-label="Scroll right"
-                    className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-gray-400 text-black text-3xl p-2 rounded-full hover:bg-gray-500 transition duration-300"
+                    className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-gray-300 text-black text-3xl p-2 rounded-full hover:bg-gray-400 transition duration-300"
                     onClick={scrollRight}
                 >
                     &gt;

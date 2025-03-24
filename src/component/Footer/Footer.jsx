@@ -19,11 +19,11 @@ const Footer = () => {
     return (
         <footer className="bg-white pt-16 flex flex-col items-center border-t-2 border-gray-300 shadow-md w-full p-2">
             {/* Banner Image */}
-            <div className="w-full mb-4">
+            <div className="w-full mb-1">
                 <img
                     src="/techpolarity-logo.png"
                     alt="Techpolarity Banner"
-                    className="w-full h-40 object-contain object-top"
+                    className="w-full h-30 object-contain object-top"
                 />
             </div>
 
