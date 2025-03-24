@@ -2,7 +2,7 @@ import React from 'react';
 
 const LeftSideBarLarge = () => {
     return (
-        <div className="w-full p-2 bg-gray-100 rounded-l-lg">
+        <div className="w-full p-2 bg-gray-100 rounded-lg">
             {/* Sidebar Articles */}
             {[1, 2, 3, 4].map((item, index) => (
                 <div key={index} className="mb-6 flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">

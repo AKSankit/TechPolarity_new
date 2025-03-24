@@ -9,13 +9,13 @@ const TabBar = () => {
 
     const scrollLeft = () => {
         if (scrollContainerRef.current) {
-            scrollContainerRef.current.scrollBy({ left: -100, behavior: 'smooth' });
+            scrollContainerRef.current.scrollBy({ left: -150, behavior: 'smooth' });
         }
     };
 
     const scrollRight = () => {
         if (scrollContainerRef.current) {
-            scrollContainerRef.current.scrollBy({ left: 100, behavior: 'smooth' });
+            scrollContainerRef.current.scrollBy({ left: 150, behavior: 'smooth' });
         }
     };
 
@@ -24,11 +24,11 @@ const TabBar = () => {
             <h2 className="text-center text-[clamp(2rem,5vw,5rem)] font-bold mb-6 p-2">
                 Trending
             </h2>
-            <div className="relative bg-gray-100 p-2 rounded-xl overflow-hidden">
+            <div className="relative bg-gray-100 p-2 rounded-2xl overflow-hidden">
                 {/* Left Navigation Button */}
                 <button
                     aria-label="Scroll left"
-                    className="absolute left-1 top-1/2 transform -translate-y-1/2 bg-gray-300 text-black text-3xl p-2 rounded-full hover:bg-gray-400 transition duration-300"
+                    className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-black text-3xl p-2 rounded-full hover:bg-gray-400 transition duration-300"
                     onClick={scrollLeft}
                 >
                     &lt;
@@ -53,7 +53,7 @@ const TabBar = () => {
                 {/* Right Navigation Button */}
                 <button
                     aria-label="Scroll right"
-                    className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-gray-300 text-black text-3xl p-2 rounded-full hover:bg-gray-400 transition duration-300"
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-black text-3xl p-2 rounded-full hover:bg-gray-400 transition duration-300"
                     onClick={scrollRight}
                 >
                     &gt;
