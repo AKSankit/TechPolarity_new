@@ -15,10 +15,10 @@ const Header = () => {
                 </a>
 
                 {/* Desktop Navigation Links */}
-                <nav className="hidden md:flex items-center space-x-4 lg:space-x-6">
+                <nav className="hidden md:flex  space-x-4 lg:space-x-6">
                     {navItems.map((item, index) => (
                         <Link to={`/${item.toLowerCase()}`} key={index}>
-                            <button className="bg-gray-200 px-4 py-1 rounded-full hover:bg-red-600 transition">
+                            <button className="px-4 py-2 rounded-full bg-gray-200 transition hover:bg-red-600 hover:text-white">
                                 {item}
                             </button>
                         </Link>
@@ -56,10 +56,11 @@ const Header = () => {
 
             {/* Mobile Menu (Side Panel) */}
             <div
-                className={`fixed top-0 left-0 w-64 h-full bg-white shadow-md transform transition-transform duration-300 
-                ${menuOpen ? "translate-x-0" : "-translate-x-full"} overflow-y-auto max-h-screen z-50`}
+                className={`fixed top-0 right-0 w-64 h-full bg-white shadow-md transform transition-transform duration-300 
+    ${menuOpen ? "translate-x-0" : "translate-x-full"} overflow-y-auto max-h-screen z-50`}
             >
-                <div className="flex justify-between items-center p-4 border-b">
+
+            <div className="flex justify-between items-center p-4 border-b">
                     <a href="/" className="flex items-center">
                         <img src="/logo.png" alt="Logo" className="w-32 h-10" />
                     </a>
@@ -76,12 +77,14 @@ const Header = () => {
                 {/* Mobile Navigation Links */}
                 <div className="p-4 flex flex-col space-y-3">
                     {navItems.map((item, index) => (
+                        <Link to={`/${item.toLowerCase()}`} key={index}>
                         <button
                             key={index}
-                            className="px-4 py-2 rounded-full bg-gray-200 transition hover:bg-red-600 hover:text-white"
+                            className="min-w-44 py-2 rounded-full bg-gray-200 transition hover:bg-red-600 hover:text-white"
                         >
                             {item}
                         </button>
+                        </Link>
                     ))}
 
                     {/* Mobile Search Bar */}

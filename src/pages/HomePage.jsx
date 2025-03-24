@@ -44,7 +44,7 @@ function HomePage() {
                     <TrendingAppStory />
                 </div>
             </div>
-            <div><TrendingStory/></div>
+            <div className=" p-2"><TrendingStory/></div>
             <div className="p-2"><Footer/></div>
         </div>
     );
