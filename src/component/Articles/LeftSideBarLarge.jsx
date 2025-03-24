@@ -7,7 +7,7 @@ const LeftSideBarLarge = () => {
             {[1, 2, 3, 4].map((item, index) => (
                 <div key={index} className="mb-6 flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
                     <img
-                        src="/public/Keyboard3.png"
+                        src="/Keyboard3.png"
                         alt="About Keyboard"
                         className="w-full sm:w-1/3 rounded-lg shadow-lg"
                     />
