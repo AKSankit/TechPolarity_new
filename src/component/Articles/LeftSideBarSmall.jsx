@@ -8,7 +8,7 @@ const LeftSideBarSmall = ({ onClick }) => {
                 <div key={index} className="w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 mb-6 sm:mb-0 p-2">
                     <div className="flex flex-col space-y-4 p-4 bg-white rounded-lg shadow-md">
                         <img
-                            src="/public/Keyboard3.png" // Adjust image path as needed
+                            src="/Keyboard3.png" // Adjust image path as needed
                             alt="About Keyboard"
                             className="w-full h-auto object-contain rounded-lg shadow-lg" // Use object-contain for responsiveness
                         />

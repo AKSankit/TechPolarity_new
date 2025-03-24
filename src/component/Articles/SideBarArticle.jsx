@@ -20,10 +20,10 @@ const SidebarArticleItem = ({ imgSrc, title }) => (
 
 const SideBarArticle = () => {
     const articles = [
-        { imgSrc: "/public/Keyboard3.png", title: "About Keyboard" },
-        { imgSrc: "/public/Keyboard3.png", title: "About Keyboard" },
-        { imgSrc: "/public/Keyboard3.png", title: "About Keyboard" },
-        { imgSrc: "/public/Keyboard3.png", title: "About Keyboard" },
+        { imgSrc: "/Keyboard3.png", title: "About Keyboard" },
+        { imgSrc: "/Keyboard3.png", title: "About Keyboard" },
+        { imgSrc: "/Keyboard3.png", title: "About Keyboard" },
+        { imgSrc: "/Keyboard3.png", title: "About Keyboard" },
     ];
 
     return (

@@ -2,9 +2,9 @@ import React from 'react';
 
 const TrendingStory = () => {
     const stories = [
-        { imgSrc: 'public/keyboard2.png', alt: 'About Keyboard' },
-        { imgSrc: 'public/keyboard2.png', alt: 'About Keyboard' },
-        { imgSrc: 'public/keyboard2.png', alt: 'About Keyboard' },
+        { imgSrc: '/keyboard2.png', alt: 'About Keyboard' },
+        { imgSrc: '/keyboard2.png', alt: 'About Keyboard' },
+        { imgSrc: '/keyboard2.png', alt: 'About Keyboard' },
     ];
 
     return (
