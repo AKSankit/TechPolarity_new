@@ -20,8 +20,8 @@ const TabBar = () => {
     };
 
     return (
-        <div className="bg-white p-4 rounded-lg shadow-md w-full max-w-screen-xl mx-auto">
-            <h2 className="text-center text-[clamp(2rem,5vw,5rem)] font-bold mb-6 p-2">
+        <div className="bg-white  rounded-lg shadow-md w-full max-w-screen-xl mx-auto">
+            <h2 className="text-center text-[clamp(2rem,5vw,5rem)] font-bold p-2">
                 Trending
             </h2>
             <div className="relative bg-gray-200 p-2 rounded-2xl overflow-hidden ">
