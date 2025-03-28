@@ -7,15 +7,15 @@ const Header = () => {
     const navItems = ["News", "Review", "Opinion", "Gaming", "Tech"];
 
     return (
-        <header className="shadow-md rounded-t-md w-full px-4 md:px-8 py-3 relative z-50">
+        <header className="shadow-md rounded-t-md w-full px-4 md:px-8 py-3 relative z-50 ">
             <div className="flex justify-between items-center max-w-screen-xl mx-auto">
                 {/* Logo */}
                 <a href="/" className="flex items-center">
-                    <img src="/logo.png" alt="Logo" className="w-40 h-10 md:w-80 md:h-20 cursor-pointer rounded-full" />
+                    <img src="/logo.png" alt="Logo" className="w-40 h-10 md:w-80 md:h-10 cursor-pointer " />
                 </a>
 
                 {/* Desktop Navigation Links */}
-                <nav className="hidden md:flex  space-x-4 lg:space-x-6">
+                <nav className="hidden md:flex  space-x-4 lg:space-x-3">
                     {navItems.map((item, index) => (
                         <Link to={`/${item.toLowerCase()}`} key={index}>
                             <button className="px-4 py-2 rounded-full bg-gray-200 transition hover:bg-red-600 hover:text-white">
@@ -30,10 +30,24 @@ const Header = () => {
                     <input
                         type="text"
                         placeholder="Search"
-                        className="outline-none bg-transparent px-2 py-1 text-sm w-full"
+                        className="outline-none bg-transparent px-2 py-1 text-sm w-full pl-3"
                     />
-                    <button className="bg-gray-200 px-5 py-2 rounded-full hover:bg-red-600">
-                        Search
+                    {/* Search Icon Button */}
+                    <button className="bg-gray-200 p-2 rounded-full hover:bg-red-600">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-5 h-5 text-gray-500"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M10 18a8 8 0 110-16 8 8 0 010 16zm0 0l6 6"
+                            />
+                        </svg>
                     </button>
                 </div>
 
@@ -60,7 +74,7 @@ const Header = () => {
     ${menuOpen ? "translate-x-0" : "translate-x-full"} overflow-y-auto max-h-screen z-50`}
             >
 
-            <div className="flex justify-between items-center p-4 border-b">
+                <div className="flex justify-between items-center p-4 border-b">
                     <a href="/" className="flex items-center">
                         <img src="/logo.png" alt="Logo" className="w-32 h-10" />
                     </a>
@@ -78,12 +92,11 @@ const Header = () => {
                 <div className="p-4 flex flex-col space-y-3">
                     {navItems.map((item, index) => (
                         <Link to={`/${item.toLowerCase()}`} key={index}>
-                        <button
-                            key={index}
-                            className="min-w-44 py-2 rounded-full bg-gray-200 transition hover:bg-red-600 hover:text-white"
-                        >
-                            {item}
-                        </button>
+                            <button
+                                className="min-w-44 py-2 rounded-full bg-gray-200 transition hover:bg-red-600 hover:text-white"
+                            >
+                                {item}
+                            </button>
                         </Link>
                     ))}
 
@@ -92,10 +105,24 @@ const Header = () => {
                         <input
                             type="text"
                             placeholder="Search"
-                            className="outline-none bg-transparent px-2 py-1 text-sm w-full"
+                            className="outline-none bg-transparent px-2 py-1 text-sm w-full pl-10"
                         />
-                        <button className="bg-gray-200 px-5 py-2 rounded-full hover:bg-red-600">
-                            Search
+                        {/* Mobile Search Icon Button */}
+                        <button className="bg-gray-200 p-2 rounded-full hover:bg-red-600">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="w-5 h-5 text-gray-500"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M10 18a8 8 0 110-16 8 8 0 010 16zm0 0l6 6"
+                                />
+                            </svg>
                         </button>
                     </div>
                 </div>

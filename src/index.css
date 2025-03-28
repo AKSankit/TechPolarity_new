@@ -2,17 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Remove default margin and padding from html and body */
-html, body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+
+
+body {
+    padding-left: 18%;  /* 30% of the viewport width from the left */
+    padding-right: 15%; /* 30% of the viewport width from the right */
+    margin-left: 0;      /* Reset margin to avoid any default margin */
+    margin-right: 0;     /* Reset margin to avoid any default margin */
 }
 
-/* Ensure the root element takes up the full screen */
-#root {
-    width: 100%;
-    height: 100%;
-}

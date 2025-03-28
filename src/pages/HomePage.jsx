@@ -35,16 +35,16 @@ function HomePage() {
             {/* Container for LeftSideBarLarge and TrendingAppStory with respective widths */}
             <div className="flex sm:flex-row flex-col gap-1 ">
                 {/* LeftSideBarLarge taking 75% of the width */}
-                <div className="w-full sm:w-3/4 p-3">
+                <div className="w-full sm:w-3/4 p-1">
                     <LeftSideBarLarge />
                 </div>
 
                 {/* TrendingAppStory taking 25% of the width */}
-                <div className="w-full sm:w-1/4 p-3">
+                <div className="w-full sm:w-1/4 p-1">
                     <TrendingAppStory />
                 </div>
             </div>
-            <div className=" p-2"><TrendingStory/></div>
+            <div className=" p-3"><TrendingStory/></div>
             <div className="p-2"><Footer/></div>
         </div>
     );

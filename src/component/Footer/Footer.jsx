@@ -1,12 +1,37 @@
 import React from 'react';
-import { FaFacebook, FaYoutube, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+
 
 const socialLinks = [
-    { href: "https://facebook.com", icon: <FaFacebook className="text-blue-600" />, hoverClass: "hover:text-blue-600" },
-    { href: "https://youtube.com", icon: <FaYoutube className="text-red-600" />, hoverClass: "hover:text-red-600" },
-    { href: "https://instagram.com", icon: <FaInstagram className="text-gradient-to-r from-pink-500 via-red-500 to-yellow-500" />, hoverClass: "hover:text-pink-500" },
-    { href: "https://twitter.com", icon: <FaTwitter className="text-blue-400" />, hoverClass: "hover:text-blue-400" },
-    { href: "https://linkedin.com", icon: <FaLinkedin className="text-blue-700" />, hoverClass: "hover:text-blue-700" }
+    {
+        href: "https://facebook.com",
+        icon: <img src="/facebook-icon.png" alt="Tech Polarity Facebook Icon" className="w-8 h-8" />,
+        hoverClass: "hover:text-blue-600"
+    },
+
+
+        {
+            href: "https://youtube.com",
+            icon: <img src="/youtube-icon.png" alt="YouTube" className="w-8 h-8" />,
+            hoverClass: "hover:opacity-80"
+        },
+        {
+            href: "https://instagram.com",
+            icon: <img src="/instagram-icon.png" alt="Instagram" className="w-8 h-8" />,
+            hoverClass: "hover:opacity-80"
+        },
+        {
+            href: "https://twitter.com",
+            icon: <img src="/twitter-icon.png" alt="Twitter" className="w-8 h-8" />,
+            hoverClass: "hover:opacity-80"
+        },
+    {
+        href: "mailto:your-email@gmail.com",
+        icon: <img src="/gmail-icon.png" alt="Gmail" className="w-8 h-8" />,
+        hoverClass: "hover:opacity-80"
+    }
+
+
+
 ];
 
 const footerLinks = [
@@ -17,13 +42,13 @@ const footerLinks = [
 
 const Footer = () => {
     return (
-        <footer className="bg-white pt-16 flex flex-col items-center border-t-2 border-gray-300 shadow-md w-full p-2">
+        <footer className="bg-white pt-6 flex flex-col items-center border-t-2 border-gray-300 shadow-md w-full p-2">
             {/* Banner Image */}
             <div className="w-full mb-1">
                 <img
                     src="/techpolarity-logo.png"
                     alt="Techpolarity Banner"
-                    className="w-full h-30 object-contain object-top"
+                    className="w-full h-32 object-contain object-top"
                 />
             </div>
 
