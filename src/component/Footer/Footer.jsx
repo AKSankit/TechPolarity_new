@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
 
             {/* Social Media Icons */}
-            <div className="flex flex-wrap justify-center space-x-6 mb-4 text-3xl sm:text-4xl">
+            <div className="flex flex-wrap justify-center space-x-3 mb-4 text-3xl sm:text-4xl">
                 {socialLinks.map((link, index) => (
                     <a
                         key={index}

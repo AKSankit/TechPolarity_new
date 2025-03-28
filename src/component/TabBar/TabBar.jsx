@@ -21,14 +21,14 @@ const TabBar = () => {
 
     return (
         <div className="bg-white rounded-lg shadow-md w-full max-w-screen-xl mx-auto">
-            <h2 className="text-center text-[clamp(2rem,3vw,5rem)] font-bold p-1">
+            <h2 className="text-center text-[clamp(2rem,3vw,5rem)] font-bold p-0">
                 Trending
             </h2>
-            <div className="relative bg-gray-200 p-1 rounded-2xl overflow-hidden max-w-2xl mx-auto">
+            <div className="relative bg-gray-200 p-2 rounded-2xl overflow-hidden max-w-4xl mx-auto">
                 {/* Left Navigation Button */}
                 <button
                     aria-label="Scroll left"
-                    className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-black text-3xl p-1 rounded-full hover:bg-gray-300 transition duration-300"
+                    className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-black text-3xl p-2 rounded-full hover:bg-gray-300 transition duration-300"
                     onClick={scrollLeft}
                 >
                     &lt;
@@ -53,13 +53,12 @@ const TabBar = () => {
                 {/* Right Navigation Button */}
                 <button
                     aria-label="Scroll right"
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-black text-3xl p-1 rounded-full hover:bg-gray-300 transition duration-300"
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-black text-3xl p-2 rounded-full hover:bg-gray-300 transition duration-300"
                     onClick={scrollRight}
                 >
                     &gt;
                 </button>
             </div>
-
         </div>
     );
 };

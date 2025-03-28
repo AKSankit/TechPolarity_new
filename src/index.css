@@ -4,10 +4,4 @@
 
 
 
-body {
-    padding-left: 18%;  /* 30% of the viewport width from the left */
-    padding-right: 15%; /* 30% of the viewport width from the right */
-    margin-left: 0;      /* Reset margin to avoid any default margin */
-    margin-right: 0;     /* Reset margin to avoid any default margin */
-}
 

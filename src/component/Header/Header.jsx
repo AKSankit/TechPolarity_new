@@ -7,15 +7,15 @@ const Header = () => {
     const navItems = ["News", "Review", "Opinion", "Gaming", "Tech"];
 
     return (
-        <header className="shadow-md rounded-t-md w-full px-4 md:px-8 py-3 relative z-50 ">
+        <header className="shadow-md rounded-t-md w-full px-4 md:px-8 py-3 relative z-50">
             <div className="flex justify-between items-center max-w-screen-xl mx-auto">
                 {/* Logo */}
                 <a href="/" className="flex items-center">
-                    <img src="/logo.png" alt="Logo" className="w-40 h-10 md:w-80 md:h-10 cursor-pointer " />
+                    <img src="/logo.png" alt="Logo" className="w-40 h-10 md:w-80 md:h-20 cursor-pointer " />
                 </a>
 
                 {/* Desktop Navigation Links */}
-                <nav className="hidden md:flex  space-x-4 lg:space-x-3">
+                <nav className="hidden md:flex  space-x-4 lg:space-x-6">
                     {navItems.map((item, index) => (
                         <Link to={`/${item.toLowerCase()}`} key={index}>
                             <button className="px-4 py-2 rounded-full bg-gray-200 transition hover:bg-red-600 hover:text-white">
@@ -30,7 +30,7 @@ const Header = () => {
                     <input
                         type="text"
                         placeholder="Search"
-                        className="outline-none bg-transparent px-2 py-1 text-sm w-full pl-3"
+                        className="outline-none bg-transparent px-2 py-1 text-sm w-full pl-10"
                     />
                     {/* Search Icon Button */}
                     <button className="bg-gray-200 p-2 rounded-full hover:bg-red-600">

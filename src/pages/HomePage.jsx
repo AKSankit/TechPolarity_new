@@ -18,33 +18,40 @@ function HomePage() {
             {/* TabBar Component */}
             <TabBar />
 
-            {/* Main Content Area */}
-            <div className="flex flex-col sm:flex-row flex-grow gap-4">
-                {/* Main Article and LeftSideBarSmall */}
-                <div className="w-full sm:w-1/2 flex flex-col gap-4 p-2">
-                    <MainArticle />
-                    <LeftSideBarSmall />
+            <div className="px-4 md:px-8 lg:px-56">
+                {/* Main Content Area */}
+                <div className="flex flex-col sm:flex-row flex-grow gap-4">
+                    {/* Main Article and LeftSideBarSmall */}
+                    <div className="w-full sm:w-1/2 flex flex-col gap-4 p-2">
+                        <MainArticle />
+                        <LeftSideBarSmall />
+                    </div>
+
+                    {/* Sidebar Article Component */}
+                    <div className="w-full sm:w-2/4 flex flex-col gap-4 p-2">
+                        <SideBarArticle />
+                    </div>
                 </div>
 
-                {/* Sidebar Article Component */}
-                <div className="w-full sm:w-2/4 flex flex-col gap-4 p-2">
-                    <SideBarArticle />
+                {/* Container for LeftSideBarLarge and TrendingAppStory with respective widths */}
+                <div className="flex sm:flex-row flex-col gap-1">
+                    {/* LeftSideBarLarge taking 75% of the width */}
+                    <div className="w-full sm:w-3/4 p-1">
+                        <LeftSideBarLarge />
+                    </div>
+
+                    {/* TrendingAppStory taking 25% of the width */}
+                    <div className="w-full sm:w-1/4 p-1">
+                        <TrendingAppStory />
+                    </div>
+                </div>
+
+                {/* Trending Story */}
+                <div className="p-3">
+                    <TrendingStory />
                 </div>
             </div>
 
-            {/* Container for LeftSideBarLarge and TrendingAppStory with respective widths */}
-            <div className="flex sm:flex-row flex-col gap-1 ">
-                {/* LeftSideBarLarge taking 75% of the width */}
-                <div className="w-full sm:w-3/4 p-1">
-                    <LeftSideBarLarge />
-                </div>
-
-                {/* TrendingAppStory taking 25% of the width */}
-                <div className="w-full sm:w-1/4 p-1">
-                    <TrendingAppStory />
-                </div>
-            </div>
-            <div className=" p-3"><TrendingStory/></div>
             <div className="p-2"><Footer/></div>
         </div>
     );
