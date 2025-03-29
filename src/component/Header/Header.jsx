@@ -11,8 +11,14 @@ const Header = () => {
             <div className="flex justify-between items-center max-w-screen-xl mx-auto">
                 {/* Logo */}
                 <a href="/" className="flex items-center">
-                    <img src="/logo.png" alt="Logo" className="w-28 h-8 md:w-60 md:h-10 cursor-pointer" />
+                    <img
+                        src="/logo.png"
+                        alt="Logo"
+                        className="w-[180px] h-[50px] min-w-[180px] min-h-[50px] cursor-pointer p-2"
+                    />
                 </a>
+
+
 
 
                 {/* Desktop Navigation Links */}
