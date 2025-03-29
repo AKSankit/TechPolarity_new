@@ -4,10 +4,11 @@ import TabBar from "/src/component/TabBar/TabBar.jsx";
 import TrendingAppStory from "/src/component/Articles/TrendingAppStory.jsx";
 import TrendingStory from "/src/component/Articles/TrendingStory.jsx";
 import keyboardImg from "../../public/Keyboard3.png"; // Ensure the image is placed correctly
+import Footer from "/src/component/Footer/Footer.jsx";
 
 const LandingPage = () => {
     return (
-        <div>
+        <div className="max-w-[880px] mx-auto p-0">
             <Header />
             <TabBar />
 
@@ -62,26 +63,42 @@ const LandingPage = () => {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda at consequuntur, debitis dolore doloremque eos, et in maiores modi optio provident quas quo, reprehenderit similique sint ut vel voluptatum.
                     </div>
                 </div>
-
-
             </div>
+
             {/* Third Section - Trending Stories */}
             <div className="w-full flex flex-row gap-8 text-left">
                 {/* Trending Story (75% Width) */}
                 <div className="w-3/4">
                     <TrendingStory />
 
-                    <div className="p-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fugit magni repellendus. Aperiam architecto at beatae consectetur consequatur dolore dolores eveniet ex in incidunt itaque laboriosam mollitia necessitatibus nihil nobis non, nostrum, obcaecati placeat provident quam quas quis quisquam repellat reprehenderit sapiente soluta ullam ut? Deleniti dolorum eum iste vitae.</div>
-                    <div className="p-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fugit magni repellendus. Aperiam architecto at beatae consectetur consequatur dolore dolores eveniet ex in incidunt itaque laboriosam mollitia necessitatibus nihil nobis non, nostrum, obcaecati placeat provident quam quas quis quisquam repellat reprehenderit sapiente soluta ullam ut? Deleniti dolorum eum iste vitae.</div>
-                    <div className="p-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fugit magni repellendus. Aperiam architecto at beatae consectetur consequatur dolore dolores eveniet ex in incidunt itaque laboriosam mollitia necessitatibus nihil nobis non, nostrum, obcaecati placeat provident quam quas quis quisquam repellat reprehenderit sapiente soluta ullam ut? Deleniti dolorum eum iste vitae.</div>
+                    <div className="p-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fugit magni repellendus.
+                        Aperiam architecto at beatae consectetur consequatur dolore dolores eveniet ex in incidunt
+                        itaque laboriosam mollitia necessitatibus nihil nobis non, nostrum, obcaecati placeat provident quam quas quis
+                        quisquam repellat reprehenderit sapiente soluta ullam ut? Deleniti dolorum eum iste vitae.
+                    </div>
+                    <div className="p-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fugit magni repellendus.
+                        Aperiam architecto at beatae consectetur consequatur dolore dolores eveniet ex in incidunt
+                        itaque laboriosam mollitia necessitatibus nihil nobis non, nostrum, obcaecati placeat provident quam quas quis
+                        quisquam repellat reprehenderit sapiente soluta ullam ut? Deleniti dolorum eum iste vitae.
+                    </div>
+                    <div className="p-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus fugit magni repellendus.
+                        Aperiam architecto at beatae consectetur consequatur dolore dolores eveniet ex in incidunt
+                        itaque laboriosam mollitia necessitatibus nihil nobis non, nostrum, obcaecati placeat provident quam quas quis
+                        quisquam repellat reprehenderit sapiente soluta ullam ut? Deleniti dolorum eum iste vitae.
+                    </div>
                 </div>
-
 
                 {/* Trending App Story (25% Width) */}
                 <div className="w-1/4">
                     <TrendingAppStory />
                 </div>
             </div>
+
+            {/* Footer Section */}
+            <Footer />
         </div>
     );
 };
