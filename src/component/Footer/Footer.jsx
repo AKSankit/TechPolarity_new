@@ -16,7 +16,7 @@ const footerLinks = [
 
 const Footer = () => {
     return (
-        <footer className="bg-white pt-6 border-t-2 border-gray-300 w-full">
+        <footer className="bg-white pt-6  w-full">
             {/* Banner Image */}
             <div className="w-full max-w-screen-lg mx-auto px-4 mb-4">
                 <img

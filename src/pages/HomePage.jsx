@@ -29,7 +29,7 @@ function HomePage() {
                     </div>
 
                     {/* Sidebar Article Component */}
-                    <div className="w-full sm:w-2/4 ">
+                    <div className="w-full sm:w-2/4 p-2">
                         <SideBarArticle />
                         <SideBarArticle />
                         <SideBarArticle />

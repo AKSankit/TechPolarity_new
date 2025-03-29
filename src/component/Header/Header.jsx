@@ -14,7 +14,7 @@ const Header = () => {
                     <img
                         src="/logo.png"
                         alt="Logo"
-                        className="w-[180px] h-[50px] min-w-[180px] min-h-[50px] cursor-pointer p-2"
+                        className="w-[180px] h-[35px] min-w-[180px] min-h-[35px] cursor-pointer "
                     />
                 </a>
 
@@ -41,22 +41,20 @@ const Header = () => {
                         className="outline-none bg-transparent px-2 py-1 text-sm w-full"
                     />
                     {/* Search Icon Button */}
-                    <button className="bg-gray-200 p-1.5 rounded-full hover:bg-red-600">
+                    <button className="bg-gray-100 p-1.5 rounded-full hover:bg-red-500 transition duration-300">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="w-4 h-4 text-gray-500"
+                            className="w-6 h-6 text-gray-600 hover:text-white"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
+                            strokeWidth="2"
                         >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M10 18a8 8 0 110-16 8 8 0 010 16zm0 0l6 6"
-                            />
+                            <circle cx="11" cy="11" r="6" stroke="currentColor" strokeWidth="2"/>
+                            <line x1="16" y1="16" x2="20" y2="20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                         </svg>
                     </button>
+
                 </div>
 
 
