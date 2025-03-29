@@ -11,25 +11,31 @@ import Footer from "../component/Footer/Footer.jsx";
 
 function HomePage() {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen px-4 md:px-8 lg:px-48">
             {/* Header Component */}
             <Header />
 
             {/* TabBar Component */}
             <TabBar />
 
-            <div className="px-4 md:px-8 lg:px-56">
+
                 {/* Main Content Area */}
-                <div className="flex flex-col sm:flex-row flex-grow gap-4">
+                <div className="flex flex-col sm:flex-row flex-grow ">
                     {/* Main Article and LeftSideBarSmall */}
-                    <div className="w-full sm:w-1/2 flex flex-col gap-4 p-2">
+                    <div className="w-full sm:w-1/2 flex flex-col p-2">
                         <MainArticle />
                         <LeftSideBarSmall />
+
                     </div>
 
                     {/* Sidebar Article Component */}
-                    <div className="w-full sm:w-2/4 flex flex-col gap-4 p-2">
+                    <div className="w-full sm:w-2/4 ">
                         <SideBarArticle />
+                        <SideBarArticle />
+                        <SideBarArticle />
+                        <SideBarArticle />
+
+
                     </div>
                 </div>
 
@@ -50,7 +56,7 @@ function HomePage() {
                 <div className="p-3">
                     <TrendingStory />
                 </div>
-            </div>
+
 
             <div className="p-2"><Footer/></div>
         </div>

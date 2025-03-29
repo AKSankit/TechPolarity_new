@@ -14,7 +14,7 @@ const LeftSideBarSmall = ({ onClick }) => {
                         />
                         <h2 className="text-xl font-semibold text-gray-800">About Keyboard</h2>
                         <div className="space-y-1">
-                            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi deserunt dolorem ducimus.</div>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</div>
                         </div>
                     </div>
                 </div>

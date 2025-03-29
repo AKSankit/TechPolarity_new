@@ -20,11 +20,12 @@ const TabBar = () => {
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-md w-full max-w-screen-xl mx-auto">
-            <h2 className="text-center text-[clamp(2rem,3vw,5rem)] font-bold p-0">
+        <div className="bg-white  w-full max-w-screen-xl mx-auto">
+            <h2 className="text-center text-[clamp(2rem,3vw,5rem)] font-bold p-0 ">
                 Trending
             </h2>
-            <div className="relative bg-gray-200 p-2 rounded-2xl overflow-hidden max-w-4xl mx-auto">
+            <div className= "border-b-2 border-black p-4">
+            <div className="relative bg-gray-200 p-2 rounded-2xl overflow-hidden max-w-4xl mx-auto ">
                 {/* Left Navigation Button */}
                 <button
                     aria-label="Scroll left"
@@ -58,6 +59,7 @@ const TabBar = () => {
                 >
                     &gt;
                 </button>
+            </div>
             </div>
         </div>
     );

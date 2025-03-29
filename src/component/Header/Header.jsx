@@ -7,36 +7,38 @@ const Header = () => {
     const navItems = ["News", "Review", "Opinion", "Gaming", "Tech"];
 
     return (
-        <header className="shadow-md rounded-t-md w-full px-4 md:px-8 py-3 relative z-50">
+        <header className=" w-full px-2 md:px-0 py-2 relative z-20">
             <div className="flex justify-between items-center max-w-screen-xl mx-auto">
                 {/* Logo */}
                 <a href="/" className="flex items-center">
-                    <img src="/logo.png" alt="Logo" className="w-40 h-10 md:w-80 md:min-h-12 cursor-pointer " />
+                    <img src="/logo.png" alt="Logo" className="w-28 h-8 md:w-60 md:h-10 cursor-pointer" />
                 </a>
 
+
                 {/* Desktop Navigation Links */}
-                <nav className="hidden md:flex  space-x-4 lg:space-x-6">
+                <nav className="hidden md:flex space-x-4 lg:space-x-2">  {/* Reduced space-x values */}
                     {navItems.map((item, index) => (
                         <Link to={`/${item.toLowerCase()}`} key={index}>
-                            <button className="px-4 py-2 rounded-full bg-gray-200 transition hover:bg-red-600 hover:text-white">
+                            <button className="px-3 py-1 rounded-full bg-gray-200 transition hover:bg-red-600 hover:text-white">
                                 {item}
                             </button>
                         </Link>
                     ))}
                 </nav>
 
+
                 {/* Desktop Search Bar */}
-                <div className="hidden md:flex items-center border rounded-full px-4 py-1 w-auto md:w-64">
+                <div className="hidden md:flex items-center border rounded-full px-3 py-[2px] w-auto md:w-44">
                     <input
                         type="text"
                         placeholder="Search"
-                        className="outline-none bg-transparent px-2 py-1 text-sm w-full pl-10"
+                        className="outline-none bg-transparent px-2 py-1 text-sm w-full"
                     />
                     {/* Search Icon Button */}
-                    <button className="bg-gray-200 p-2 rounded-full hover:bg-red-600">
+                    <button className="bg-gray-200 p-1.5 rounded-full hover:bg-red-600">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 text-gray-500"
+                            className="w-4 h-4 text-gray-500"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -50,6 +52,7 @@ const Header = () => {
                         </svg>
                     </button>
                 </div>
+
 
                 {/* Mobile Menu Button */}
                 <button

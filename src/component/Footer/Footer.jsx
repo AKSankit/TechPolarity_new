@@ -1,87 +1,66 @@
 import React from 'react';
 
-
 const socialLinks = [
-    {
-        href: "https://facebook.com",
-        icon: <img src="/facebook-icon.png" alt="Tech Polarity Facebook Icon" className="w-8 h-8" />,
-        hoverClass: "hover:text-blue-600"
-    },
-
-
-        {
-            href: "https://youtube.com",
-            icon: <img src="/youtube-icon.png" alt="YouTube" className="w-8 h-8" />,
-            hoverClass: "hover:opacity-80"
-        },
-        {
-            href: "https://instagram.com",
-            icon: <img src="/instagram-icon.png" alt="Instagram" className="w-8 h-8" />,
-            hoverClass: "hover:opacity-80"
-        },
-        {
-            href: "https://twitter.com",
-            icon: <img src="/twitter-icon.png" alt="Twitter" className="w-8 h-8" />,
-            hoverClass: "hover:opacity-80"
-        },
-    {
-        href: "mailto:your-email@gmail.com",
-        icon: <img src="/gmail-icon.png" alt="Gmail" className="w-8 h-8" />,
-        hoverClass: "hover:opacity-80"
-    }
-
-
-
+    { href: "https://facebook.com", icon: "/facebook-icon.png", alt: "Facebook" },
+    { href: "https://youtube.com", icon: "/youtube-icon.png", alt: "YouTube" },
+    { href: "https://instagram.com", icon: "/instagram-icon.png", alt: "Instagram" },
+    { href: "https://twitter.com", icon: "/twitter-icon.png", alt: "Twitter" },
+    { href: "mailto:your-email@gmail.com", icon: "/gmail-icon.png", alt: "Gmail" }
 ];
 
 const footerLinks = [
-    { href: "/about", label: "📖 About" },
-    { href: "/privacy-policy", label: "🔒 Privacy Policy" },
-    { href: "/contact", label: "✉️ Contact" }
+    { href: "/about", label: "About" },
+    { href: "/privacy-policy", label: "Privacy Policy" },
+    { href: "/contact", label: "Contact" }
 ];
 
 const Footer = () => {
     return (
-        <footer className="bg-white pt-6 flex flex-col items-center border-t-2 border-gray-300 shadow-md w-full p-2">
+        <footer className="bg-white pt-6 border-t-2 border-gray-300 w-full">
             {/* Banner Image */}
-            <div className="w-full mb-1">
+            <div className="w-full max-w-screen-lg mx-auto px-4 mb-4">
                 <img
                     src="/techpolarity-logo.png"
                     alt="Techpolarity Banner"
-                    className="w-full h-32 object-contain object-top"
+                    className="w-full h-32 object-contain"
                 />
             </div>
 
             {/* Social Media Icons */}
-            <div className="flex flex-wrap justify-center space-x-3 mb-4 text-3xl sm:text-4xl">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-4">
                 {socialLinks.map((link, index) => (
                     <a
                         key={index}
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`hover:scale-110 transition-transform duration-200 ${link.hoverClass}`}
+                        className="hover:scale-110 transition-transform duration-200"
                     >
-                        {link.icon}
+                        <img
+                            src={link.icon}
+                            alt={link.alt}
+                            className="w-8 h-8 sm:w-10 sm:h-10 min-w-[32px] min-h-[32px]"
+                        />
                     </a>
                 ))}
             </div>
 
             {/* Footer Links */}
-            <div className="flex flex-wrap justify-center space-x-6 text-gray-600 font-medium mb-4 text-sm sm:text-base ">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-12 text-gray-600 font-medium mb-4 text-sm sm:text-base p-4">
                 {footerLinks.map((link, index) => (
                     <a
                         key={index}
                         href={link.href}
-                        className="hover:underline hover:text-blue-600"
+                        className="relative group px-4 py-2 rounded-md hover:bg-red-500 hover:text-white transition-all duration-300"
                     >
-                        {link.label}
+                        <span className="absolute inset-0 bg-red-500 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 z-0"></span>
+                        <span className="relative z-10">{link.label}</span>
                     </a>
                 ))}
             </div>
 
             {/* Copyright */}
-            <div className="mt-4 text-gray-500 text-xs sm:text-sm font-semibold text-center">
+            <div className="text-gray-500 text-xs sm:text-sm font-semibold text-center pb-4">
                 &copy; Techpolarity {new Date().getFullYear()} | All Rights Reserved
             </div>
         </footer>
